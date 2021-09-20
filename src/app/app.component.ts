@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'First';
   description ='this is the description';
+  months = ["jan", "feb","mar"];
+  isAvailable = false;
 }
