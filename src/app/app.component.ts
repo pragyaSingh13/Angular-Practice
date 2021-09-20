@@ -10,4 +10,11 @@ export class AppComponent {
   description ='this is the description';
   months = ["jan", "feb","mar"];
   isAvailable = false;
+
+  setTrue(){
+    alert("its true");
+  }
+  setFalse(){
+  alert("it's false");
+  }
 }

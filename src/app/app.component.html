@@ -20,11 +20,17 @@
         </div>
         <div class="row">
             <div class="col-lg-8 col-md-8 col-lg-push-2 col-md-push-2">
+                <div class="form-group text-center">
+                    <div class="btn-group">
+                        <button class="btn btn-success" (click)="setTrue()">True</button>
+                        <button class="btn btn-danger" (click)="setFalse()">False</button>
+                    </div>
+                </div>
                 <ng-container *ngIf ="isAvailable;else elseTemplate">
-                    true
+                    <p id="notif">Aavailable</p>
                 </ng-container>
                 <ng-template #elseTemplate>
-                    false
+                    <p id="notif2">Not Available</p>
                 </ng-template>
             </div>
         </div>
